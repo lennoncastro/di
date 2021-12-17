@@ -1,9 +1,11 @@
+import 'package:annotations/annotations.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
+@Singleton(isLazy: false)
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
